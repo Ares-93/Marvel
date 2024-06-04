@@ -1,12 +1,16 @@
 import "../styles/Search.scss";
+import { useState } from "react";
 
 const Search = () => {
+  const [characterName, setCharacterName] = useState("");
+
   const handleSubmit = () => {
     //TODO implement later
   };
 
-  const handleChange = () => {
+  const handleChange = (event) => {
     //TODO implement later
+    setCharacterName(event.target.value);
   };
 
   const handleReset = () => {
